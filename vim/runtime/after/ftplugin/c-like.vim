@@ -1,0 +1,1 @@
+call GoogleCodingStyle(1)
