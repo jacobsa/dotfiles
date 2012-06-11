@@ -1,0 +1,15 @@
+# Xcode noise
+build/
+build/*
+*.pbxuser
+*.mode1v3
+*.mode2v3
+
+# OS X noise
+.DS_Store
+
+# vim
+.*.swp
+
+# scons
+.sconsign.dblite

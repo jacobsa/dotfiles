@@ -1,0 +1,22 @@
+[color]
+  diff = auto
+  grep = auto
+  status = auto
+  branch = auto
+
+[core]
+  excludesfile = /Users/jacobsa/.gitignore
+
+[alias]
+  a = add
+  b = branch
+  c = commit
+  co = checkout
+  d = diff
+  h = help
+  m = merge
+  s = status
+  sh = show
+
+  # Commit all with an message (which need not be quoted).
+  cm = "!f() { git commit -a -m \"$*\" ; }; f"
