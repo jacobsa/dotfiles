@@ -21,7 +21,7 @@ export PATH=/Users/jacobsa/go/clients/bin:$PATH
 export PATH=/Users/jacobsa/go/third_party/bin:$PATH
 
 # Auto-completion of git commands
-source ~/.bash/git-completion.bash
+source ~/.dotfiles/bash/git-completion.bash
 
 # Support 'g' for git, with completion.
 alias g='git'
