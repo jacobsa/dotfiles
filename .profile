@@ -8,7 +8,7 @@ fi
 # Show the current git branch in the prompt.
 function promptcmd() {
   GITBRANCH=$(basename "$(git symbolic-ref HEAD 2>/dev/null)")
-  PS1="\u@\h:\w${GITBRANCH:+*$GITBRANCH}\$ "
+  PS1="\[\033[00;31m\]\u@\h\[\033[00m\]:\[\033[00;34m\]\w\[\033[00m\]${GITBRANCH:+*\[\033[00;32m\]\$GITBRANCH\[\033[00m\]}\$ "
 }
 
 export PROMPT_COMMAND=promptcmd
