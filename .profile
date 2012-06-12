@@ -20,3 +20,8 @@ source ~/.dotfiles/bash/git-completion.bash
 # Support 'g' for git, with completion.
 alias g='git'
 complete -o bashdefault -o default -o nospace -F _git g
+
+# Make sure ssh-agent works when connected over SSH.
+if [ -x /usr/bin/ssx-agents ] ; then
+  eval `/usr/bin/ssx-agents $SHELL`
+fi
