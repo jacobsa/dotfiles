@@ -5,8 +5,13 @@ if [ -n "$BASH_VERSION" ]; then
   fi
 fi
 
-# Give a nicer prompt.
-export PS1="\\h: [\\w]$ "
+# Show the current git branch in the prompt.
+function promptcmd() {
+  GITBRANCH=$(basename "$(git symbolic-ref HEAD 2>/dev/null)")
+  PS1="\u@\h:\w${GITBRANCH:+*$GITBRANCH}\$ "
+}
+
+export PROMPT_COMMAND=promptcmd
 
 # Enable vim mode in bash.
 set -o vi
