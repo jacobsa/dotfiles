@@ -8,9 +8,6 @@ fi
 # Give a nicer prompt.
 export PS1="\\h: [\\w]$ "
 
-# Don't use 'more' for git diff and friends.
-export GIT_PAGER=cat
-
 # vim mode in bash
 set -o vi
 
