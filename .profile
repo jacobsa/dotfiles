@@ -2,6 +2,10 @@
 function promptcmd() {
   GITBRANCH=$(basename "$(git symbolic-ref HEAD 2>/dev/null)")
   PS1="\[\033[00;35m\]\u@\h\[\033[00m\]:\[\033[00;34m\]\w\[\033[00m\]${GITBRANCH:+*\[\033[00;32m\]\$GITBRANCH\[\033[00m\]}\$ "
+
+  # This is the default behavior of PROMPT_COMMAND; it lets us open new tabs in
+  # the same directory.
+  update_terminal_cwd;
 }
 
 export PROMPT_COMMAND=promptcmd
