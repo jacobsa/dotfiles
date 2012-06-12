@@ -18,3 +18,36 @@ source ~/.dotfiles/bash/git-completion.bash
 # Support 'g' for git, with completion.
 alias g='git'
 complete -o bashdefault -o default -o nospace -F _git g
+
+# Make sure various tools use color by default.
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+
+# Include Google-specific stuff.
+if [ -f "$HOME/.google-dotfiles/profile-google.sh" ]; then
+  . "$HOME/.google-dotfiles/profile-google.sh"
+fi
+
+
+########################################################################
+# Interactive magic
+########################################################################
+
+# Open scrollback buffer in vim. Make sure to use a sub-shell so the traps don't
+# persist after leaving vim.
+open_scrollback_in_vim() {
+  (
+    local filename="$(mktemp)"
+    trap "rm -f -- '$filename'" 0
+    trap 'exit 2' 1 2 3 15
+    tmux capture-pane -S -32000
+    tmux save-buffer "$filename"
+    tmux delete-buffer
+    # Use - because we want to call scrollback from within zle
+    OUTPUT_FILE="$1" command vim -c "runtime! macros/scrollback_less.vim" - < "$filename"
+    # Move back up over the annoying text which vim writes.
+    tput cuu 2
+  )
+}
+
+alias sb=open_scrollback_in_vim

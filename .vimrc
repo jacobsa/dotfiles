@@ -71,3 +71,8 @@ set history=1000
 "     http://blog.toddwerth.com/entry_files/8/ir_black.vim
 "
 colorscheme ir_black
+
+" Pull in Google-specific rules, if present.
+if filereadable($HOME . "/.google-dotfiles/google-specific.vim")
+  source /usr/local/google/home/jacobsa/.google-dotfiles/google-specific.vim
+endif
