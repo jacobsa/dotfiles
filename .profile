@@ -8,23 +8,13 @@ fi
 # Give a nicer prompt.
 export PS1="\\h: [\\w]$ "
 
-# vim mode in bash
+# Enable vim mode in bash.
 set -o vi
 
-# svn
-export SVN_EDITOR=/usr/bin/vim
-
-# ls colors
+# Turn on colors for 'ls'.
 export CLICOLOR=1
 
-# Go
-export GOROOT=/Users/jacobsa/go/root
-export GOPATH=/Users/jacobsa/go/third_party:/Users/jacobsa/go/clients
-export PATH=$GOROOT/bin:$PATH
-export PATH=/Users/jacobsa/go/clients/bin:$PATH
-export PATH=/Users/jacobsa/go/third_party/bin:$PATH
-
-# Auto-completion of git commands
+# Enable auto-completion of git commands.
 source ~/.dotfiles/bash/git-completion.bash
 
 # Support 'g' for git, with completion.
