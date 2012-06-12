@@ -9,6 +9,9 @@ export PROMPT_COMMAND=promptcmd
 # Enable vim mode in bash.
 set -o vi
 
+# Set the appropriate editor.
+export EDITOR=vi
+
 # Turn on colors for 'ls'.
 export CLICOLOR=1
 
