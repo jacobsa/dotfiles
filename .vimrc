@@ -71,9 +71,3 @@ set history=1000
 "     http://blog.toddwerth.com/entry_files/8/ir_black.vim
 "
 colorscheme ir_black
-
-" Pull in Google-specific rules, if present. Make sure to use $HOME for the test
-" so that this maps to /Users on OS X.
-if filereadable($HOME . "/google-specific.vim")
-  source /home/jacobsa/google-specific.vim
-endif
