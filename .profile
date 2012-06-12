@@ -1,4 +1,11 @@
-# Nice prompt
+# Include .bashrc if it exists and we're running bash.
+if [ -n "$BASH_VERSION" ]; then
+  if [ -f "$HOME/.bashrc" ]; then
+    . "$HOME/.bashrc"
+  fi
+fi
+
+# Give a nicer prompt.
 export PS1="\\h: [\\w]$ "
 
 # Don't use 'more' for git diff and friends.
