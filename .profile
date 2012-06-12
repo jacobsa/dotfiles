@@ -1,10 +1,3 @@
-# Include .bashrc if it exists and we're running bash.
-if [ -n "$BASH_VERSION" ]; then
-  if [ -f "$HOME/.bashrc" ]; then
-    . "$HOME/.bashrc"
-  fi
-fi
-
 # Show the current git branch in the prompt.
 function promptcmd() {
   GITBRANCH=$(basename "$(git symbolic-ref HEAD 2>/dev/null)")
