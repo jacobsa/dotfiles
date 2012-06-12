@@ -20,3 +20,6 @@
 
   # Commit all with an message (which need not be quoted).
   cm = "!f() { git commit -a -m \"$*\" ; }; f"
+
+[user]
+  name = Aaron Jacobs
