@@ -31,6 +31,11 @@ if [ -f "$HOME/.google-dotfiles/profile-google.sh" ]; then
   . "$HOME/.google-dotfiles/profile-google.sh"
 fi
 
+# Set up ssh-agent.
+if [ -x /usr/bin/ssx-agents ] ; then
+   [ "$PS1" ] && eval `/usr/bin/ssx-agents $SHELL`
+fi
+
 
 ########################################################################
 # Interactive magic
