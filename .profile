@@ -25,3 +25,6 @@ source ~/.dotfiles/bash/git-completion.bash
 # Support 'g' for git, with completion.
 alias g='git'
 complete -o bashdefault -o default -o nospace -F _git g
+
+# Set up Go.
+export GOPATH=/Users/jacobsa/go
