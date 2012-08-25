@@ -22,4 +22,4 @@
   cm = "!f() { git commit -a -m \"$*\" ; }; f"
 
 [user]
-  name = Aaron Jacobs
+	name = Aaron Jacobs
