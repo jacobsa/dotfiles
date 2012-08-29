@@ -1,5 +1,5 @@
-" Add support for Go.
-set rtp+=$GOROOT/misc/vim
+" Make sure the Go support can find the appropriate supporting files.
+set runtimepath+=$GOROOT/misc/vim
 
 " Turn on syntax highlighting.
 syntax on

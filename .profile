@@ -27,5 +27,6 @@ alias g='git'
 complete -o bashdefault -o default -o nospace -F _git g
 
 # Set up Go.
+export GOROOT=/usr/local/go
 export GOPATH=/Users/jacobsa/go
 export PATH=$PATH:/Users/jacobsa/go/bin
