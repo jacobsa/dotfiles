@@ -57,6 +57,9 @@ set nojoinspaces
 autocmd BufNewFile,BufRead Makefile set nolist
 autocmd BufNewFile,BufRead *.go set nolist
 
+" Make sure proto buffers use spaces.
+autocmd BufNewFile,BufRead *.proto set expandtab
+
 " Make tabs two spaces for Go. Don't mess up the use of tabs for indentation.
 autocmd BufNewFile,BufRead *.go set tabstop=2 shiftwidth=2 noexpandtab
 
