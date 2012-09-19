@@ -50,6 +50,9 @@ augroup filetypedetect
 au BufNewFile,BufRead * call HighlightTooLongLines()
 augroup END
 
+" Don't put two spaces after a full stop.
+set nojoinspaces
+
 " Turn off tab highlighting for makefiles and Go.
 autocmd BufNewFile,BufRead Makefile set nolist
 autocmd BufNewFile,BufRead *.go set nolist
