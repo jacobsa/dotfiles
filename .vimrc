@@ -57,6 +57,9 @@ autocmd BufNewFile,BufRead *.go set nolist
 " Make tabs two spaces for Go. Don't mess up the use of tabs for indentation.
 autocmd BufNewFile,BufRead *.go set tabstop=2 shiftwidth=2 noexpandtab
 
+" Don't use tabs for markdown.
+autocmd BufNewFile,BufRead *.md set expandtab
+
 " Treat FLAME files as JS.
 autocmd BufNewFile,BufRead FLAME set filetype=javascript
 
