@@ -50,6 +50,9 @@ augroup filetypedetect
 au BufNewFile,BufRead * call HighlightTooLongLines()
 augroup END
 
+" Don't put two spaces after a full stop.
+set nojoinspaces
+
 " Turn off tab highlighting for makefiles and Go.
 autocmd BufNewFile,BufRead Makefile set nolist
 autocmd BufNewFile,BufRead *.go set nolist
@@ -59,6 +62,9 @@ autocmd BufNewFile,BufRead *.proto set expandtab
 
 " Make tabs two spaces for Go. Don't mess up the use of tabs for indentation.
 autocmd BufNewFile,BufRead *.go set tabstop=2 shiftwidth=2 noexpandtab
+
+" Don't use tabs for markdown.
+autocmd BufNewFile,BufRead *.md set expandtab
 
 " Treat FLAME files as JS.
 autocmd BufNewFile,BufRead FLAME set filetype=javascript
