@@ -66,6 +66,9 @@ autocmd BufNewFile,BufRead *.md set expandtab
 " Treat FLAME files as JS.
 autocmd BufNewFile,BufRead FLAME set filetype=javascript
 
+" Set up JSON file types.
+autocmd BufNewFile,BufRead *.json set filetype=javascript
+
 " Turn on bash-like filename completion.
 set wildmode=longest:list
 
