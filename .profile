@@ -36,6 +36,23 @@ if [ -x /usr/bin/ssx-agents ] ; then
    [ "$PS1" ] && eval `/usr/bin/ssx-agents $SHELL`
 fi
 
+# Append to the history file; don't overwrite it.
+shopt -s histappend
+
+# Put multi-line commands on a single history line.
+shopt -s cmdhist
+
+# Keep lots of history.
+export HISTSIZE=100000
+export HISTFILESIZE=1000000000
+
+# Append to the history file immediately rather when the shell exists, in case
+# the machine crashes with a long-running shell.
+trap 'history -a' DEBUG
+
+# Improve the presentation of the 'history' command.
+export HISTTIMEFORMAT='%Y-%m-%d %H:%M:%S: '
+
 
 ########################################################################
 # Interactive magic
