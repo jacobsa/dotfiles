@@ -20,6 +20,9 @@ endif
 " allows files to be open in invisible buffers
 set hidden
 
+" Turn on spell checking.
+set spell
+
 " Turn on line number display.
 set number
 
