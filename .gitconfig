@@ -23,3 +23,5 @@
 
 [user]
   name = Aaron Jacobs
+[push]
+	default = matching
