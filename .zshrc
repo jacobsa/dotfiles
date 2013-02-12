@@ -2,10 +2,14 @@
 HISTFILE=~/.histfile
 HISTSIZE=100000
 SAVEHIST=100000
+setopt share_history  # Share across terminals.
 
 # Vim mode
 setopt appendhistory
 bindkey -v
+
+# Support Ctrl-R for history search despite vim mode.
+bindkey '^R' history-incremental-search-backward
 
 # Colors to be used for prompt below.
 BLACK=$'\033[0m'
