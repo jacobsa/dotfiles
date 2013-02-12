@@ -39,6 +39,10 @@ if [ -x /usr/bin/ssx-agents ] ; then
    [ "$PS1" ] && eval `/usr/bin/ssx-agents $SHELL`
 fi
 
+# Use caching for expensive autocomplete scripts.
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.zsh/cache
+
 # Auto-completion. Do this after Google-specific stuff so it can configure
 # completion functions.
 zstyle :compinstall filename '/usr/local/google/home/jacobsa/.zshrc'
