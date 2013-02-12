@@ -1,16 +1,11 @@
-# Lines configured by zsh-newuser-install
+# History settings
 HISTFILE=~/.histfile
 HISTSIZE=100000
 SAVEHIST=100000
+
+# Vim mode
 setopt appendhistory
 bindkey -v
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
-zstyle :compinstall filename '/usr/local/google/home/jacobsa/.zshrc'
-
-autoload -Uz compinit
-compinit
-# End of lines added by compinstall
 
 # Colors to be used for prompt below.
 BLACK=$'\033[0m'
@@ -43,3 +38,9 @@ fi
 if [ -x /usr/bin/ssx-agents ] ; then
    [ "$PS1" ] && eval `/usr/bin/ssx-agents $SHELL`
 fi
+
+# Auto-completion. Do this after Google-specific stuff so it can configure
+# completion functions.
+zstyle :compinstall filename '/usr/local/google/home/jacobsa/.zshrc'
+autoload -Uz compinit
+compinit
