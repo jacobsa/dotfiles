@@ -26,5 +26,20 @@ parse_git_branch () {
 }
 
 function precmd() {
-    export PROMPT="%{$RED%}%n@%m%{$BLACK%}:%{$GREEN%}%~%{$YELLOW%}$(parse_git_branch)%{$BLACK%}%# "
+    export PROMPT="
+
+%{$RED%}%n@%m%{$BLACK%}:%{$GREEN%}%~%{$YELLOW%}$(parse_git_branch)%{$BLACK%}%# "
 }
+
+# Support 'g' for git.
+alias g='git'
+
+# Include Google-specific stuff.
+if [ -f "$HOME/.google-dotfiles/zshrc-google.sh" ]; then
+  . "$HOME/.google-dotfiles/zshrc-google.sh"
+fi
+
+# Set up ssh-agent.
+if [ -x /usr/bin/ssx-agents ] ; then
+   [ "$PS1" ] && eval `/usr/bin/ssx-agents $SHELL`
+fi
