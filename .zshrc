@@ -4,6 +4,9 @@ HISTSIZE=100000
 SAVEHIST=100000
 setopt share_history  # Share across terminals.
 
+# Use vim as editor.
+export EDITOR=vi
+
 # Vim mode
 setopt appendhistory
 bindkey -v
