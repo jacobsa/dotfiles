@@ -7,6 +7,9 @@ setopt share_history  # Share across terminals.
 # Use vim as editor.
 export EDITOR=vi
 
+# Use unified diffs by default.
+export DIFF='diff -u'
+
 # Vim mode
 setopt appendhistory
 bindkey -v
