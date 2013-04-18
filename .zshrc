@@ -39,22 +39,11 @@ function precmd() {
 # Support 'g' for git.
 alias g='git'
 
-# Include Google-specific stuff.
-if [ -f "$HOME/.google-dotfiles/zshrc-google.sh" ]; then
-  . "$HOME/.google-dotfiles/zshrc-google.sh"
-fi
-
-# Set up ssh-agent.
-if [ -x /usr/bin/ssx-agents ] ; then
-   [ "$PS1" ] && eval `/usr/bin/ssx-agents $SHELL`
-fi
-
 # Use caching for expensive autocomplete scripts.
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/cache
 
-# Auto-completion. Do this after Google-specific stuff so it can configure
-# completion functions.
-zstyle :compinstall filename '/usr/local/google/home/jacobsa/.zshrc'
+# Auto-completion.
+zstyle :compinstall filename '/Users/jacobsa/.zshrc'
 autoload -Uz compinit
 compinit
