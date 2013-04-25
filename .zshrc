@@ -39,6 +39,11 @@ function precmd() {
 # Support 'g' for git.
 alias g='git'
 
+# Set up Go.
+export GOROOT=/usr/local/go
+export GOPATH=/Users/jacobsa/go
+export PATH=$PATH:/Users/jacobsa/go/bin
+
 # Use caching for expensive autocomplete scripts.
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/cache
