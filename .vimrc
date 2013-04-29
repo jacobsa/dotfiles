@@ -7,6 +7,8 @@ syntax on
 " Include coding style options.
 if filereadable("/usr/share/vim/google/google.vim")
   source /usr/share/vim/google/google.vim
+elseif filereadable("/home/ec2-user/.vim/style.vim")
+  source /home/ec2-user/.vim/style.vim
 else
   source ~jacobsa/.vim/style.vim
 endif
