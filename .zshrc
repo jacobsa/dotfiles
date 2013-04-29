@@ -55,6 +55,7 @@ fi
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export PATH=$PATH:$HOME/go/bin
+export PATH=$PATH:$GOROOT/bin
 
 # Use caching for expensive autocomplete scripts.
 zstyle ':completion:*' use-cache on
