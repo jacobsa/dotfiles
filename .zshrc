@@ -44,10 +44,17 @@ if [ -f "$HOME/.google-dotfiles/zshrc-google.sh" ]; then
   . "$HOME/.google-dotfiles/zshrc-google.sh"
 fi
 
-# Set up ssh-agent.
+# Set up the Google-internal ssh-agent, or a normal one.
 if [ -x /usr/bin/ssx-agents ] ; then
-   [ "$PS1" ] && eval `/usr/bin/ssx-agents $SHELL`
+  [ "$PS1" ] && eval `/usr/bin/ssx-agents $SHELL`
+else
+  eval `ssh-agent` > /dev/null
 fi
+
+# Set up Go.
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$PATH:$HOME/go/bin
 
 # Use caching for expensive autocomplete scripts.
 zstyle ':completion:*' use-cache on

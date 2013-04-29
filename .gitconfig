@@ -22,6 +22,7 @@
   cm = "!f() { git commit -a -m \"$*\" ; }; f"
 
 [user]
-  name = Aaron Jacobs
+	name = Aaron Jacobs
+	email = aaronjjacobs@gmail.com
 [push]
 	default = matching
