@@ -47,8 +47,8 @@ fi
 # Set up the Google-internal ssh-agent, or a normal one.
 if [ -x /usr/bin/ssx-agents ] ; then
   [ "$PS1" ] && eval `/usr/bin/ssx-agents $SHELL`
-else
-  eval `ssh-agent` > /dev/null
+elif [ -z "$SSH_AUTH_SOCK" -a -x "/usr/bin/ssh-agent" ]; then
+  eval `/usr/bin/ssh-agent` > /dev/null
 fi
 
 # Set up Go.
