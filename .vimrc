@@ -80,6 +80,9 @@ au BufRead,BufNewFile *.go setfiletype go
 " Detect file types for proto buffers.
 au BufRead,BufNewFile *.proto setfiletype proto
 
+" Use C++11 syntax highlighting.
+au BufRead,BufNewFile *.cc set syntax=cpp11
+
 " Turn on bash-like filename completion.
 set wildmode=longest:list
 
