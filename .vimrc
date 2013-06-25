@@ -79,6 +79,7 @@ au BufRead,BufNewFile *.go setfiletype go
 au BufRead,BufNewFile *.proto setfiletype proto
 
 " Use C++11 syntax highlighting.
+au BufRead,BufNewFile *.h set syntax=cpp11
 au BufRead,BufNewFile *.cc set syntax=cpp11
 
 " Turn on bash-like filename completion.
