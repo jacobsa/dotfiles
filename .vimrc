@@ -81,8 +81,7 @@ au BufRead,BufNewFile *.go setfiletype go
 au BufRead,BufNewFile *.proto setfiletype proto
 
 " Use C++11 syntax highlighting.
-au BufEnter,BufRead,BufNewFile *.h set syntax=cpp11
-au BufEnter,BufRead,BufNewFile *.cc set syntax=cpp11
+autocmd FileType cpp set syntax=cpp11
 
 " Turn on bash-like filename completion.
 set wildmode=longest:list
