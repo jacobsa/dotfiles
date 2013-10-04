@@ -36,6 +36,9 @@ function precmd() {
 %{$RED%}%n@%m%{$BLACK%}:%{$GREEN%}%~%{$YELLOW%}$(parse_git_branch)%{$BLACK%}%# "
 }
 
+# Use local tools in preference to system ones.
+export PATH="/usr/local/bin:$PATH"
+
 # Support 'g' for git.
 alias g='git'
 
