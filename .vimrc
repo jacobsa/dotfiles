@@ -74,6 +74,15 @@ autocmd BufNewFile,BufRead FLAME set filetype=javascript
 " Set up JSON file types.
 autocmd BufNewFile,BufRead *.json set filetype=javascript
 
+" Detect file types for go.
+au BufRead,BufNewFile *.go setfiletype go
+
+" Detect file types for proto buffers.
+au BufRead,BufNewFile *.proto setfiletype proto
+
+" Use C++11 syntax highlighting.
+autocmd FileType cpp set syntax=cpp11
+
 " Turn on bash-like filename completion.
 set wildmode=longest:list
 
