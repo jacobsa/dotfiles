@@ -42,6 +42,9 @@ export PATH="/usr/local/bin:$PATH"
 # Support 'g' for git.
 alias g='git'
 
+# Make mosh work correctly with Kerberos authentication.
+alias mosh='mosh --ssh="ssh -o GSSAPITrustDns=no"'
+
 # Set up Go.
 export GOROOT=/usr/local/go
 export GOPATH=/Users/jacobsa/go
