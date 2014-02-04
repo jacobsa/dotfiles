@@ -39,6 +39,9 @@ function precmd() {
 # Support 'g' for git.
 alias g='git'
 
+# Make mosh work correctly with Kerberos authentication.
+alias mosh='mosh --ssh="ssh -o GSSAPITrustDns=no"'
+
 # Include Google-specific stuff.
 if [ -f "$HOME/.google-dotfiles/zshrc-google.sh" ]; then
   . "$HOME/.google-dotfiles/zshrc-google.sh"
