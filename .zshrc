@@ -51,12 +51,6 @@ elif [ -z "$SSH_AUTH_SOCK" -a -x "/usr/bin/ssh-agent" ]; then
   eval `/usr/bin/ssh-agent` > /dev/null
 fi
 
-# Set up Go.
-export GOROOT=/usr/local/go
-export GOPATH=$HOME/go
-export PATH=$PATH:$HOME/go/bin
-export PATH=$PATH:$GOROOT/bin
-
 # Use caching for expensive autocomplete scripts.
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/cache
