@@ -44,13 +44,6 @@ if [ -f "$HOME/.google-dotfiles/zshrc-google.sh" ]; then
   . "$HOME/.google-dotfiles/zshrc-google.sh"
 fi
 
-# Set up the Google-internal ssh-agent, or a normal one.
-if [ -x /usr/bin/ssx-agents ] ; then
-  [ "$PS1" ] && eval `/usr/bin/ssx-agents $SHELL`
-elif [ -z "$SSH_AUTH_SOCK" -a -x "/usr/bin/ssh-agent" ]; then
-  eval `/usr/bin/ssh-agent` > /dev/null
-fi
-
 # Use caching for expensive autocomplete scripts.
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/cache
