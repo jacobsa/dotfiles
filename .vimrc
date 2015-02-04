@@ -1,6 +1,9 @@
 " Enable pathogen plugins: https://github.com/tpope/vim-pathogen
 execute pathogen#infect()
 
+" Use goimports when auto-formatting Go files.
+let g:go_fmt_command = "goimports"
+
 " Turn on syntax highlighting.
 syntax on
 
