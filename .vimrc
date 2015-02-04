@@ -1,5 +1,5 @@
-" Make sure the Go support can find the appropriate supporting files.
-set runtimepath+=$GOROOT/misc/vim
+" Enable pathogen plugins: https://github.com/tpope/vim-pathogen
+execute pathogen#infect()
 
 " Turn on syntax highlighting.
 syntax on
