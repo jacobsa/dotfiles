@@ -1,5 +1,5 @@
-" Add support for Go.
-set rtp+=$GOROOT/misc/vim
+" Enable pathogen plugins: https://github.com/tpope/vim-pathogen
+execute pathogen#infect()
 
 " Turn on syntax highlighting.
 syntax on
