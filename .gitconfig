@@ -26,3 +26,5 @@
 
 [push]
   default = matching
+[http]
+	cookiefile = /Users/jacobsa/.gitcookies
