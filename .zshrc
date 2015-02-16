@@ -53,3 +53,8 @@ zstyle ':completion:*' cache-path ~/.zsh/cache
 zstyle :compinstall filename '/usr/local/google/home/jacobsa/.zshrc'
 autoload -Uz compinit
 compinit
+
+# Set up Go.
+export GOROOT=/usr/lib/google-golang
+export GOPATH=/usr/local/google/home/jacobsa/go
+export PATH=$PATH:$GOPATH/bin
