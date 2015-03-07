@@ -15,7 +15,7 @@
   d = diff
   h = help
   m = merge
-  noffmerge = merge --no-ff --no-commit
+  noffmerge = merge --no-ff
   s = status
   sh = show
 
