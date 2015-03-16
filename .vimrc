@@ -4,6 +4,9 @@ execute pathogen#infect()
 " Use goimports when auto-formatting Go files.
 let g:go_fmt_command = "goimports"
 
+" Don't do section folding in Markdown.
+let g:vim_markdown_folding_disabled=1
+
 " Turn on syntax highlighting.
 syntax on
 
