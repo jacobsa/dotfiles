@@ -59,6 +59,12 @@ zstyle :compinstall filename '$HOME/.zshrc'
 autoload -Uz compinit
 compinit
 
+# Set up the gcloud tool.
+if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then
+  source "$HOME/google-cloud-sdk/path.zsh.inc"
+  source "$HOME/google-cloud-sdk/completion.zsh.inc"
+fi
+
 # Tell Terminal.app the working directory, for opening new tabs in the same
 # directory. Reference:
 #
