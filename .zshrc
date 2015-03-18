@@ -46,7 +46,7 @@ fi
 
 # Set up Go.
 export GOROOT=/usr/lib/google-golang
-export GOPATH=/usr/local/google/home/jacobsa/go
+export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 # Use caching for expensive autocomplete scripts.
@@ -55,6 +55,6 @@ zstyle ':completion:*' cache-path ~/.zsh/cache
 
 # Auto-completion. Do this after Google-specific stuff so it can configure
 # completion functions.
-zstyle :compinstall filename '/usr/local/google/home/jacobsa/.zshrc'
+zstyle :compinstall filename '$HOME/.zshrc'
 autoload -Uz compinit
 compinit
