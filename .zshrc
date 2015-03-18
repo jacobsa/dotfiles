@@ -47,15 +47,15 @@ alias mosh='mosh --ssh="ssh -o GSSAPITrustDns=no"'
 
 # Set up Go.
 export GOROOT=/usr/local/go
-export GOPATH=/Users/jacobsa/go
-export PATH=$PATH:/Users/jacobsa/go/bin
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 
 # Use caching for expensive autocomplete scripts.
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/cache
 
 # Auto-completion.
-zstyle :compinstall filename '/Users/jacobsa/.zshrc'
+zstyle :compinstall filename '$HOME/.zshrc'
 autoload -Uz compinit
 compinit
 
