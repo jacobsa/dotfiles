@@ -44,6 +44,11 @@ if [ -f "$HOME/.google-dotfiles/zshrc-google.sh" ]; then
   . "$HOME/.google-dotfiles/zshrc-google.sh"
 fi
 
+# Set up Go.
+export GOROOT=/usr/lib/google-golang
+export GOPATH=/usr/local/google/home/jacobsa/go
+export PATH=$PATH:$GOPATH/bin
+
 # Use caching for expensive autocomplete scripts.
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/cache
@@ -53,8 +58,3 @@ zstyle ':completion:*' cache-path ~/.zsh/cache
 zstyle :compinstall filename '/usr/local/google/home/jacobsa/.zshrc'
 autoload -Uz compinit
 compinit
-
-# Set up Go.
-export GOROOT=/usr/lib/google-golang
-export GOPATH=/usr/local/google/home/jacobsa/go
-export PATH=$PATH:$GOPATH/bin
