@@ -5,7 +5,7 @@ SAVEHIST=100000
 setopt share_history  # Share across terminals.
 
 # Use vim as editor.
-export EDITOR=vi
+export EDITOR=vim
 
 # Use unified diffs by default.
 export DIFF='diff -u'
