@@ -1,0 +1,24 @@
+{
+  "state_file": "/Users/jacobsa/.comeback.state",
+  "key_file": "/Users/jacobsa/.comeback.key",
+  "bucket": "jacobsa-comeback",
+
+  "jobs": {
+    "homes": {
+      "base_path": "/Volumes/Time Machine/Backups.backupdb/iMac/Latest/Leibniz/Users",
+      "excludes": [
+          "^jacobsa/.comeback.state$",
+          "^(jacobsa|susie)/.dropbox$",
+          "^(jacobsa|susie)/Downloads$",
+          "^(jacobsa|susie)/Library/Caches$",
+          "^(jacobsa|susie)/Music/iTunes/iTunes Music/Movies",
+          "^(jacobsa|susie)/Music/iTunes/iTunes Music/TV Shows",
+          "^(jacobsa|susie)/tmp",
+          "^susie/Desktop/Video from Yasmin and Josh$"
+      ]
+    },
+    "test": {
+      "base_path": "/Volumes/Time Machine/Backups.backupdb/iMac/Latest/Leibniz/Users/jacobsa/Library/Application Support/MobileSync/Backup"
+    }
+  }
+}
