@@ -10,6 +10,7 @@
           "^jacobsa/.comeback.state$",
           "^(jacobsa|susie)/.dropbox$",
           "^(jacobsa|susie)/Downloads$",
+          "^(jacobsa|susie)/Library/Application Support/Google/Chrome$",
           "^(jacobsa|susie)/Library/Caches$",
           "^(jacobsa|susie)/Music/iTunes/iTunes Music/Movies",
           "^(jacobsa|susie)/Music/iTunes/iTunes Music/TV Shows",
