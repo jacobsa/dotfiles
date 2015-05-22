@@ -16,7 +16,7 @@
           "^(jacobsa|susie)/Music/iTunes/iTunes Music/Movies",
           "^(jacobsa|susie)/Music/iTunes/iTunes Music/TV Shows",
           "^(jacobsa|susie)/tmp",
-          "^susie/Desktop/Video from Yasmin and Josh$"
+          "^susie/Desktop/Video from Yasmin and Josh$",
           "^susie/Movies/Video from Yasmin and Josh$"
       ]
     },
