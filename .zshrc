@@ -45,7 +45,6 @@ if [ -f "$HOME/.google-dotfiles/zshrc-google.sh" ]; then
 fi
 
 # Set up Go.
-export GOROOT=/usr/lib/google-golang
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
