@@ -48,6 +48,13 @@ fi
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
+# Set up support for the version of Go in /usr/local/go if it exists. We do
+# this in preference to using the ancient version in the Ubuntu golang-go
+# package.
+if [ -d "/usr/local/go" ]; then
+  export PATH=$PATH:/usr/local/go/bin
+fi
+
 # Use caching for expensive autocomplete scripts.
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/cache
