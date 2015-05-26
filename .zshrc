@@ -46,7 +46,6 @@ alias g='git'
 alias mosh='mosh --ssh="ssh -o GSSAPITrustDns=no"'
 
 # Set up Go.
-export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
