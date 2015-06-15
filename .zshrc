@@ -44,9 +44,12 @@ if [ -f "$HOME/.google-dotfiles/zshrc-google.sh" ]; then
   . "$HOME/.google-dotfiles/zshrc-google.sh"
 fi
 
-# Look for Go sources in ~/go, and for Go built from HEAD in ~/clients/go.
-export GOPATH=$HOME/go
+# Prefer Go built from HEAD in ~/clients/go.
 export PATH=$HOME/clients/go/bin:$PATH
+
+# Look for Go sources in ~/go, and for binaries installed by 'go' in ~/go/bin.
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$PATH
 
 # Set up support for the version of Go in /usr/local/go if it exists. We do
 # this in preference to using the ancient version in the Ubuntu golang-go
