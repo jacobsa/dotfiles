@@ -45,9 +45,12 @@ alias g='git'
 # Make mosh work correctly with Kerberos authentication.
 alias mosh='mosh --ssh="ssh -o GSSAPITrustDns=no"'
 
-# Set up Go.
+# Prefer Go built from HEAD in ~/clients/go.
+export PATH=$HOME/clients/go/bin:$PATH
+
+# Look for Go sources in ~/go, and for binaries installed by 'go' in ~/go/bin.
 export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
+export PATH=$GOPATH/bin:$PATH
 
 # Use caching for expensive autocomplete scripts.
 zstyle ':completion:*' use-cache on
