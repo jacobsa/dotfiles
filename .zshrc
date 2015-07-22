@@ -33,7 +33,7 @@ parse_git_branch () {
 function precmd() {
     export PROMPT="
 
-%{$RED%}%n@%m%{$BLACK%}:%{$GREEN%}%~%{$YELLOW%}$(parse_git_branch)%{$BLACK%}%# "
+%{$RED%}%n@%m%{$BLACK%}:%{$GREEN%}%~%{$YELLOW%}$(parse_git_branch)%(?..%{$ORANGE%} [%?] )%{$BLACK%}# "
 }
 
 # Use local tools in preference to system ones.
