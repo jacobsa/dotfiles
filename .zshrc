@@ -43,6 +43,7 @@ alias g='git'
 export GOROOT=/usr/lib/google-golang
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+export GO15VENDOREXPERIMENT=1  # Cf. https://github.com/golang/go/commit/183cc0c
 
 # Use caching for expensive autocomplete scripts.
 zstyle ':completion:*' use-cache on
