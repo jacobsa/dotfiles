@@ -58,6 +58,9 @@ if [ -d "/usr/local/go" ]; then
   export PATH=$PATH:/usr/local/go/bin
 fi
 
+# Cf. https://github.com/golang/go/commit/183cc0c
+export GO15VENDOREXPERIMENT=1
+
 # Use caching for expensive autocomplete scripts.
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/cache
