@@ -4,6 +4,9 @@ HISTSIZE=100000
 SAVEHIST=100000
 setopt share_history  # Share across terminals.
 
+# Enable colors in ls output.
+alias ls='ls --color=auto'
+
 # Use vim as editor.
 export EDITOR=vi
 
