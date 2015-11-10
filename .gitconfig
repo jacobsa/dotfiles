@@ -24,5 +24,6 @@
 
 [user]
 	name = Aaron Jacobs
+	email = jacobsa@google.com
 [push]
 	default = matching
