@@ -5,7 +5,7 @@
 
   "jobs": {
     "homes": {
-      "base_path": "/Volumes/Time Machine/Backups.backupdb/iMac/Latest/Leibniz/Users",
+      "base_path": "/Volumes/Time Machine/Backups.backupdb/Aaron’s iMac/Latest/Leibniz/Users",
       "excludes": [
           "^jacobsa/.comeback.state$",
           "^(jacobsa|susie)/.dropbox$",
@@ -21,7 +21,7 @@
       ]
     },
     "test": {
-      "base_path": "/Volumes/Time Machine/Backups.backupdb/iMac/Latest/Leibniz/Users/jacobsa/Library/Preferences"
+      "base_path": "/Volumes/Time Machine/Backups.backupdb/Aaron’s iMac/Latest/Leibniz/Users/jacobsa/Library/Preferences"
     }
   }
 }
