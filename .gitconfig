@@ -27,3 +27,5 @@
 	email = jacobsa@google.com
 [push]
 	default = matching
+[google]
+	uplink = true
