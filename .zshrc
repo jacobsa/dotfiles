@@ -48,6 +48,9 @@ alias g='git'
 # Make mosh work correctly with Kerberos authentication.
 alias mosh='mosh --ssh="ssh -o GSSAPITrustDns=no"'
 
+# SSH without any proxy command.
+alias office-ssh="ssh -o 'ProxyCommand none'"
+
 # Prefer Go built from HEAD in ~/clients/go.
 export PATH=$HOME/clients/go/bin:$PATH
 
