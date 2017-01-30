@@ -1,3 +1,6 @@
 [ui]
 username = jacobsa
 merge = internal:merge3
+
+[alias]
+s = status
