@@ -42,6 +42,9 @@ function precmd() {
 # Support 'g' for git.
 alias g='git'
 
+# Mercurial stuff.
+hgcm() { hg commit --message "$*"; }
+
 # Include Google-specific stuff.
 if [ -f "$HOME/.google-dotfiles/zshrc-google.sh" ]; then
   . "$HOME/.google-dotfiles/zshrc-google.sh"
