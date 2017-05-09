@@ -42,10 +42,9 @@ function fish_prompt --description 'Write out the prompt'
     set suffix '>'
   end
 
-  # Choose a status color.
-  set -l color_status
+  # Augment the suffix if the previous command failed.
   if test $prev_status -ne 0
-    set color_status red
+    set suffix (echo -n -s (set_color red) " $prev_status" "$suffix" (set_color normal))
   end
 
   # Add a blank line.
@@ -57,6 +56,6 @@ function fish_prompt --description 'Write out the prompt'
   # Print the working directory.
   echo -n -s ' ' (set_color $color_cwd) (prompt_pwd) (set_color normal)
 
-  # Print the previous command's status and the suffix.
-  echo -n -s ' ' (set_color $color_status) "$prev_status" "$suffix " (set_color normal)
+  # Print the suffix.
+  echo -n -s "$suffix "
 end
