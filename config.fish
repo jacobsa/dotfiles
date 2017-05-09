@@ -1,6 +1,10 @@
 # Enable vim mode.
 fish_vi_key_bindings
 
+# Disable the [I] and [N] indicators for vim mode.
+# Cf. https://github.com/fish-shell/fish-shell/issues/2682#issuecomment-172391594
+function fish_mode_prompt; end
+
 # Set up Google-specific things when at Google.
 if test -e ~/.google-dotfiles/google-specific.fish
   . ~/.google-dotfiles/google-specific.fish
@@ -56,4 +60,3 @@ function fish_prompt --description 'Write out the prompt'
   # Print the previous command's status and the suffix.
   echo -n -s ' ' (set_color $color_status) "$prev_status" "$suffix " (set_color normal)
 end
-
