@@ -18,6 +18,9 @@ end
 # Add to $PATH.
 set PATH ~/go/bin $PATH
 
+# Tell tools to use unified diffs.
+set -x DIFF 'diff -u'
+
 # Copied from `functions fish_prompt` and modified.
 function fish_prompt --description 'Write out the prompt'
   # Save the last command's status, so that it doesn't get clobbered by
