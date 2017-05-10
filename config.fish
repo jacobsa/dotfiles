@@ -15,6 +15,9 @@ function hgcm
   hg commit --message "$argv"
 end
 
+# Add to $PATH.
+set PATH ~/go/bin $PATH
+
 # Copied from `functions fish_prompt` and modified.
 function fish_prompt --description 'Write out the prompt'
   # Save the last command's status, so that it doesn't get clobbered by
