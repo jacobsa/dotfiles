@@ -21,7 +21,7 @@ function office-ssh
 end
 
 # Add to $PATH.
-set PATH ~/go/bin $PATH
+set PATH ~/go/bin ~/.homebrew/bin $PATH
 
 # Tell tools to use unified diffs.
 set -x DIFF 'diff -u'
