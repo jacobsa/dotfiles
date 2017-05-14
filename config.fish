@@ -18,7 +18,8 @@ end
 # Add to $PATH.
 set PATH ~/go/bin $PATH
 
-# Tell tools to use unified diffs.
+# Set up tool config.
+set -x EDITOR vim
 set -x DIFF 'diff -u'
 
 # Copied from `functions fish_prompt` and modified.
