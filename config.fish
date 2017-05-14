@@ -15,6 +15,11 @@ function hgcm
   hg commit --message "$argv"
 end
 
+# SSH without any proxy command.
+function office-ssh
+  ssh -o 'ProxyCommand none' $argv
+end
+
 # Add to $PATH.
 set PATH ~/go/bin $PATH
 
