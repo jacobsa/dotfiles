@@ -66,3 +66,9 @@ function fish_prompt --description 'Write out the prompt'
   # Print the suffix.
   echo -n -s "$suffix "
 end
+
+# Helper for a common task in mercurual.
+function foldanddraft
+  hg fold --exact $argv
+	and hg phase -d tip
+end
