@@ -21,7 +21,9 @@ function office-ssh
 end
 
 # Add to $PATH.
-set PATH ~/go/bin ~/.homebrew/bin $PATH
+set PATH ~/go/bin $PATH
+set PATH ~/.homebrew/bin $PATH
+set PATH ~/google-cloud-sdk/bin $PATH
 
 # Configure tools.
 set -x EDITOR vim
