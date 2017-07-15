@@ -20,6 +20,18 @@
           "^susie/Movies/Video from Yasmin and Josh$"
       ]
     },
+    "suji_laptop": {
+      "base_path": "/Volumes/Time Machine/suji_laptop",
+      "excludes": [
+          "^.dropbox$",
+          "^Library/Application Support/Google/Chrome$",
+          "^Library/Application Support/MobileSync/Backup$",
+          "^Library/Caches$",
+          "^Music/iTunes/iTunes Music/Movies",
+          "^Music/iTunes/iTunes Music/TV Shows",
+          "^tmp",
+      ]
+    },
     "test": {
       "base_path": "/Volumes/Time Machine/Backups.backupdb/Aaron’s iMac/Latest/Leibniz/Users/jacobsa/Library/Preferences"
     }
