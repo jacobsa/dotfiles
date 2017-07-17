@@ -13,8 +13,8 @@
           "^(jacobsa|susie)/Library/Application Support/Google/Chrome$",
           "^(jacobsa|susie)/Library/Application Support/MobileSync/Backup$",
           "^(jacobsa|susie)/Library/Caches$",
-          "^(jacobsa|susie)/Music/iTunes/iTunes Music/Movies",
-          "^(jacobsa|susie)/Music/iTunes/iTunes Music/TV Shows",
+          "^(jacobsa|susie)/Music/iTunes/iTunes (Music|Media)/Movies",
+          "^(jacobsa|susie)/Music/iTunes/iTunes (Music|Media)/TV Shows",
           "^(jacobsa|susie)/tmp",
           "^susie/Desktop/Video from Yasmin and Josh$",
           "^susie/Movies/Video from Yasmin and Josh$"
@@ -27,9 +27,9 @@
           "^Library/Application Support/Google/Chrome$",
           "^Library/Application Support/MobileSync/Backup$",
           "^Library/Caches$",
-          "^Music/iTunes/iTunes Music/Movies",
-          "^Music/iTunes/iTunes Music/TV Shows",
-          "^tmp",
+          "^Music/iTunes/iTunes (Music|Media)/Movies$",
+          "^Music/iTunes/iTunes (Music|Media)/TV Shows$",
+          "^tmp$"
       ]
     },
     "test": {
