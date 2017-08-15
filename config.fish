@@ -16,6 +16,7 @@ function hgcm
 end
 
 # Add to $PATH.
+set PATH ~/.dotfiles/bin $PATH
 set PATH ~/go/bin $PATH
 
 # Set up tool config.
