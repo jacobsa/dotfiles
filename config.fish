@@ -70,6 +70,6 @@ end
 
 # Helper for a common task in mercurual.
 function foldanddraft
-  hg fold --exact $argv
-	and hg phase -d tip
+  hg foldintofirst $argv
+  and hg phase -d tip
 end
