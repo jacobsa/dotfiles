@@ -36,7 +36,7 @@ set hls
 
 " Switch between header files, implementation files, tests, and so on by
 " pressing comma and then a letter.
-let pattern = '\(\(_\(unit\)\?test\)\?\.\(cc\|js\|py\|m\|mm\|go\)\|\(-inl\)\?\.h\)$'
+let pattern = '\(\(_\(unit\)\?test\)\?\.\(cc\|js\|py\|m\|mm\|go\|gcl\)\|\(-inl\)\?\.h\)$'
 nmap ,c :e <C-R>=substitute(expand("%"), pattern, ".cc", "")<CR><CR>
 nmap ,g :e <C-R>=substitute(expand("%"), pattern, ".go", "")<CR><CR>
 nmap ,h :e <C-R>=substitute(expand("%"), pattern, ".h", "")<CR><CR>
