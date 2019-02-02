@@ -76,3 +76,6 @@ function fish_prompt --description 'Write out the prompt'
   # Print the suffix.
   echo -n -s "$suffix "
 end
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/jacobsa/google-cloud-sdk/path.fish.inc' ]; . '/Users/jacobsa/google-cloud-sdk/path.fish.inc'; end
