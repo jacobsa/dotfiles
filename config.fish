@@ -1,6 +1,9 @@
 # Enable vim mode.
 fish_vi_key_bindings
 
+# Disable the greeting. (https://stackoverflow.com/a/13995944/1505451)
+set fish_greeting
+
 # Disable the [I] and [N] indicators for vim mode.
 # Cf. https://github.com/fish-shell/fish-shell/issues/2682#issuecomment-172391594
 function fish_mode_prompt; end
