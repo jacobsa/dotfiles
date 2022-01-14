@@ -31,6 +31,9 @@ set nojoinspaces
 " Make the history longer than the default of 50.
 set history=1000
 
+" Turn on bash-like filename completion.
+set wildmode=longest:list
+
 " Use the IR_Black theme, downloaded from here:
 "
 "     http://blog.toddwerth.com/entry_files/8/ir_black.vim
