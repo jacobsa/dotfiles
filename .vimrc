@@ -70,10 +70,18 @@ nnoremap <leader>e :call SelectaCommand("find * -type f", "", ":e")<cr>
 " Pull in Google-specific plugins and aliases.
 source /usr/local/google/home/jacobsa/.google-dotfiles/google-specific.vim
 
-
 """"""""""""""""""""""""""""""
 " Final
 """"""""""""""""""""""""""""""
+
+" Explicitly load the vim 8 package manager-supported plugings before the
+" following line. Without this, file-line breaks with an error like
+"
+"   Error detected while processing function <SNR>143_gotoline[21]..<SNR>143_reopenAndGotoLine:
+"   line   12:
+"   E89: No write since last change for buffer 1 (add ! to override)
+"
+packloadall
 
 " Turn on file type-based indentation and syntax highligting.
 "
