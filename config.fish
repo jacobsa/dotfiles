@@ -19,8 +19,8 @@ function hgcm
 end
 
 # Add to $PATH.
-set PATH ~/.dotfiles/bin $PATH
-set PATH ~/go/bin $PATH
+fish_add_path ~/.dotfiles/bin
+fish_add_path ~/go/bin
 
 # Set up tool config.
 set -x EDITOR vim
