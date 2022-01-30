@@ -79,11 +79,11 @@ end
 
 # Parallel grep, for use when there is high I/O latency.
 #
-# Usage: lel_grep [grep flags] pcre_pattern directory
+# Usage: lel_grep [grep flags] pattern directory
 function lel_grep
     find $argv[-1] -type f | \
       xargs -n 1 -P 100 \
-      grep -P -H --color=auto $argv[1..-3] $argv[-2]
+      grep -H --color=auto $argv[1..-3] $argv[-2]
 end
 
 # Parallel deletion of lines, avoiding citc pollution
@@ -93,7 +93,7 @@ end
 function lel_delete_lines
     set --local re $argv[1]
     for dir in $argv[2..-1]
-        lel_grep -l $re $dir | \
+        lel_grep -P -l $re $dir | \
             xargs -n 1 -P 10 \
             perl -n -i -e "print unless m/$re/"
     end
@@ -108,7 +108,7 @@ function lel_replace
     set --local re $argv[1]
     set --local substitution $argv[2]
     for dir in $argv[3..-1]
-        lel_grep -l $re $dir | \
+        lel_grep -P -l $re $dir | \
             xargs -n 1 -P 10 \
             perl -i -pe "s;$re;$substitution;g"
     end
