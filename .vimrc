@@ -31,6 +31,10 @@ set nojoinspaces
 " Make the history longer than the default of 50.
 set history=1000
 
+" Put some buffer between the top/bototm of the screen and the cursor when
+" searching or scrolling.
+set scrolloff=12
+
 " Turn on bash-like filename completion.
 set wildmode=longest:list
 
