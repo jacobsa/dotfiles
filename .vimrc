@@ -94,6 +94,10 @@ set wildmode=longest:list
 " Make the history longer.
 set history=1000
 
+" Put some buffer between the top/bototm of the screen and the cursor when
+" searching or scrolling.
+set scrolloff=12
+
 " Use the IR_Black theme, downloaded from here:
 "
 "     http://blog.toddwerth.com/entry_files/8/ir_black.vim
