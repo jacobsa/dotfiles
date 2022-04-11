@@ -35,6 +35,9 @@ set history=1000
 " searching or scrolling.
 set scrolloff=12
 
+" Match angle brackets with movements like %.
+set matchpairs+=<:>
+
 " Turn on bash-like filename completion.
 set wildmode=longest:list
 
