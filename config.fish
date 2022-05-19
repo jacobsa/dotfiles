@@ -82,8 +82,9 @@ end
 # Usage: lel_grep [grep flags] pattern directory
 function lel_grep
     find $argv[-1] -type f | \
-      xargs -n 1 -P 100 \
-      grep -H --color=auto $argv[1..-3] $argv[-2]
+      xargs -n 1 -P 1024 grep -l $argv[1..-3] $argv[-2] | \
+      sort | \
+      xargs grep -H --color=auto $argv[1..-3] $argv[-2]
 end
 
 # Parallel deletion of lines, avoiding citc pollution
