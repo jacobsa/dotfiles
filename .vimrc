@@ -47,6 +47,10 @@ set wildmode=longest:list
 "
 colorscheme ir_black
 
+" Don't complain about curly braces within C++ lambda capture expressions
+" (https://github.com/vim/vim/issues/11639).
+let g:c_no_curly_error = 1
+
 """"""""""""""""""""""""""""""
 " selecta
 """"""""""""""""""""""""""""""
