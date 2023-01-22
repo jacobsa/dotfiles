@@ -1,0 +1,2 @@
+# Use Intex syntax (https://stackoverflow.com/a/21502943/1505451).
+settings set target.x86-disassembly-flavor intel
