@@ -13,9 +13,13 @@ if test -e ~/.google-dotfiles/google-specific.fish
   . ~/.google-dotfiles/google-specific.fish
 end
 
-# Convenient alias to auto-quote commit message.
+# Convenient aliases to auto-quote commit messages.
 function hgcm
   hg commit --message "$argv"
+end
+
+function jjcm
+  jj commit --message "$argv"
 end
 
 # Add to $PATH.
