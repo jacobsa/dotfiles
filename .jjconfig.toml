@@ -1,0 +1,20 @@
+[user]
+name = "Aaron Jacobs"
+email = "aaronjjacobs@gmail.com"
+
+
+[aliases]
+
+# Support short names for commonly-used commands.
+s = ["status"]
+sh = ["show", "--no-pager"]
+sq = ["squash"]
+
+# Support similar views to `hg l` and `hg x`.
+l = ["log", "--no-pager", "-r", "((main..)::@)::"]  # http://b/326161932#comment9
+x = ["log", "--no-pager"]
+
+
+[template-aliases]
+# Use relative timestamps, which are shorter (http://b/326331820#comment6).
+'format_timestamp(timestamp)' = 'timestamp.ago()'
