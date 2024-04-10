@@ -103,3 +103,7 @@ set scrolloff=12
 "     http://blog.toddwerth.com/entry_files/8/ir_black.vim
 "
 colorscheme ir_black
+
+" Make backspace less weird.
+" https://vi.stackexchange.com/a/2163/40517A
+set backspace=indent,eol,start
