@@ -102,3 +102,7 @@ packloadall
 " All plugins must be added before this line (http://shortn/_yZuB1FmVhB)
 filetype plugin indent on
 syntax on
+
+" Disable include scanning for Rust, which can be super slow. See
+" https://yaqs.corp.google.com/eng/q/2594947497109487616#a1.
+autocmd FileType rust set include&
