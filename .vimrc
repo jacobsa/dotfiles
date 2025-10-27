@@ -106,3 +106,7 @@ syntax on
 " Disable include scanning for Rust, which can be super slow. See
 " https://yaqs.corp.google.com/eng/q/2594947497109487616#a1.
 autocmd FileType rust set include&
+
+" Work around bad configuration that causes gq not to work in Rust. See
+" https://stackoverflow.com/q/79801583/1505451.
+autocmd FileType rust set formatprg=
