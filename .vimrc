@@ -110,3 +110,6 @@ autocmd FileType rust set include&
 " Work around bad configuration that causes gq not to work in Rust. See
 " https://stackoverflow.com/q/79801583/1505451.
 autocmd FileType rust set formatprg=
+
+" Use 80 columns for CL descriptions from jj, matching markdown.
+autocmd FileType jjdescription set textwidth=80
