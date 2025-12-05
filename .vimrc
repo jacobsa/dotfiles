@@ -22,7 +22,7 @@ function! HighlightTooLongLines()
 endfunction
 
 augroup filetypedetect
-au BufNewFile,BufRead * call HighlightTooLongLines()
+au BufEnter,WinEnter * call HighlightTooLongLines()
 augroup END
 
 " Don't put two spaces after a full stop.
