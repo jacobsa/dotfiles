@@ -113,3 +113,7 @@ autocmd FileType rust set formatprg=
 
 " Use 80 columns for CL descriptions from jj, matching markdown.
 autocmd FileType jjdescription set textwidth=80
+
+" Use 100 columns for Rust, matching rustfmt.
+" See: https://github.com/vim/vim/pull/18892
+autocmd FileType rust set textwidth=100
